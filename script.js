@@ -12,9 +12,7 @@ function renderTasks() {
         li.textContent = task;
 
         li.addEventListener("click", function () {
-            tasks.splice(index, 1);
-            saveTasks();
-            renderTasks();
+            li.style.textDecoration = "line-through";
         });
 
         list.appendChild(li);
