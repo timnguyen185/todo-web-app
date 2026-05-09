@@ -21,13 +21,13 @@ A small browser-based to-do list built with plain HTML, CSS, and JavaScript.
 ## Usage
 
 1. Open To-do list via one of two methods:
-    a. Click on https://timnguyen185.github.io/todo-web-app/ for live demo
-    b. Open `index.html` in a browser.
-2. Enter a task description in the text field.
-3. Click `Add Task` or press `Enter` to add the task.
-4. Click a task to mark it complete.
-5. Use `Edit` to modify a task and `Delete` to remove it.
-6. Click `Clear All` to remove every task from the list.
+    - Click on https://timnguyen185.github.io/todo-web-app/ for live demo
+    - Open `index.html` in a browser.
+3. Enter a task description in the text field.
+4. Click `Add Task` or press `Enter` to add the task.
+5. Click a task to mark it complete.
+6. Use `Edit` to modify a task and `Delete` to remove it.
+7. Click `Clear All` to remove every task from the list.
 
 ## Notes
 
