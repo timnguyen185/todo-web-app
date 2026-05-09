@@ -108,6 +108,13 @@ button.addEventListener("click", function () {
     input.value = "";
 });
 
+// Add task on Enter key press in input
+input.addEventListener("keydown", function (event) {
+    if (event.key === "Enter") {
+        button.click();
+    }
+});
+
 // Clear All button click event
 clearAllBtn.addEventListener("click", function () {
     tasks = [];
