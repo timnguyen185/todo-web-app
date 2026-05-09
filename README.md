@@ -20,7 +20,9 @@ A small browser-based to-do list built with plain HTML, CSS, and JavaScript.
 
 ## Usage
 
-1. Open `index.html` in a browser.
+1. Open To-do list via one of two methods:
+    a. Click on https://timnguyen185.github.io/todo-web-app/ for live demo
+    b. Open `index.html` in a browser.
 2. Enter a task description in the text field.
 3. Click `Add Task` or press `Enter` to add the task.
 4. Click a task to mark it complete.
