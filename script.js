@@ -36,6 +36,26 @@ function renderTasks() {
             renderTasks();
         });
 
+        // Create edit button
+        const editBtn = document.createElement("button");
+        editBtn.textContent = "Edit";
+
+        editBtn.addEventListener("click", function (event) {
+            event.stopPropagation();
+
+            // Prompt user for new task text
+            const updatedText = prompt("Update task:", task.text);
+            if (updatedText === null) return;
+
+            // Trim whitespace and check if empty
+            const trimmedText = updatedText.trim();
+            if (trimmedText === "") return;
+
+            task.text = trimmedText;
+            saveTasks();
+            renderTasks();
+        });
+
         // Create delete button
         const deleteBtn = document.createElement("button");
         deleteBtn.textContent = "Delete";
@@ -50,7 +70,8 @@ function renderTasks() {
             renderTasks();
         });
 
-        // Add delete button to task
+        // Add edit and delete buttons to task
+        li.appendChild(editBtn);
         li.appendChild(deleteBtn);
 
         // Add task to list
