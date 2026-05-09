@@ -3,6 +3,12 @@ const input = document.getElementById("taskInput");
 const button = document.getElementById("addBtn");
 const list = document.getElementById("taskList");
 
+// Create and add Clear All button
+const clearAllBtn = document.createElement("button");
+clearAllBtn.textContent = "Clear All";
+clearAllBtn.id = "clearAllBtn";
+button.insertAdjacentElement("afterend", clearAllBtn);
+
 // Load tasks from localStorage
 let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
 
@@ -100,6 +106,13 @@ button.addEventListener("click", function () {
 
     // Clear input
     input.value = "";
+});
+
+// Clear All button click event
+clearAllBtn.addEventListener("click", function () {
+    tasks = [];
+    saveTasks();
+    renderTasks();
 });
 
 // Initial render
